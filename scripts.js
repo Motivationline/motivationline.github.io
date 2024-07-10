@@ -39,11 +39,15 @@ document.querySelectorAll('.hover-video').forEach(video => {
 
 document.querySelectorAll('.hover-video').forEach(video => {
     video.addEventListener('click', () => {
+        const banner = video.closest(".banner")
         const hoverText = video.closest('.banner').querySelector('.hover-text');
         if (hoverText.classList.contains('hover-text-visible')) {
             hoverText.classList.remove('hover-text-visible');
         } else {
             hoverText.classList.add('hover-text-visible');
+        }
+        if (hoverText.classList.contains('hover-text-visible')) {
+            banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
