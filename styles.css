@@ -6,6 +6,8 @@ body {
     height: 100%;
     margin: 0;
     background-color: #e9e9e9;
+    font-family: "Poppins";
+
 }
 
 #motivationline{
@@ -17,6 +19,10 @@ body {
     max-width: 800px;
     filter: drop-shadow(2px 2px #2a2a2a);
 
+}
+
+h2{
+    margin-bottom: 0;
 }
 
 .banner {
@@ -48,7 +54,6 @@ body {
 .game-link{
     text-decoration: none;
     text-align: center;
-    font-family: "Poppins";
     color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: bold;
@@ -68,4 +73,31 @@ body {
 
 #robnnic{
     color:rgb(227, 134, 53);
+}
+
+.hover-text{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+}
+
+.banner .hover-text-visible{
+    display: block;
+    animation:fadeInUp 0.5s ease-in-out forwards;
+}
+
+.smooth-transition{
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Startposition des Textes */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Endposition des Textes */
+    }
 }
