@@ -44,15 +44,23 @@ body {
     text-decoration: none;
     text-align: center;
     font-family: "Poppins";
-    color: black;
-    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
     font-weight: bold;
+    
 }
 
-.game-amphibar{
-    color:rgb(12, 9, 39)
+.game-name{
+    position: relative;
+    top:20px;
+    z-index: 1;
+    filter: drop-shadow(3px 3px #000000);
 }
 
-.game-robnnic{
-    color:rgb(72, 44, 3)
+#amphibar{
+    color: rgb(101, 199, 221);
+}
+
+#robnnic{
+    color:rgb(227, 134, 53);
 }
