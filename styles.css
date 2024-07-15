@@ -7,10 +7,11 @@ body {
     margin: 0;
     background-color: #e9e9e9;
     font-family: "Poppins";
+    background-image: url(background.png);
 
 }
 
-#motivationline{
+#motivationline {
     position: relative;
     display: flex;
     width: 70%;
@@ -21,7 +22,7 @@ body {
 
 }
 
-h2{
+h2 {
     margin-top: 0px;
     margin-bottom: 0;
 }
@@ -29,97 +30,130 @@ h2{
 .banner {
     width: 80%;
     max-width: 600px;
-    margin: 0px 0;    
+    margin: 0px 0;
 }
 
 .video-container {
     width: 100%;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin-top: 50px;
 }
 
 .video-container video {
     width: 100%;
     height: auto;
-    border-radius:25px;
+    border-radius: 25px;
     filter: grayscale(100%);
-    transition: transform 0.3s ease-in, filter 0.3s ease;
+    transition: transform 0.3s ease-in, filter 0.3s ease, border-radius 0.5s ease;
+    display: block;
+}
+
+.video-container.open video {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    filter: none;
 }
 
 .video-container:hover {
-    transition: transform 0.3s ease;
     transform: scale(1.05);
-    border-radius:25px ;
+    /* border-radius: 25px; */
+}
+video:hover {
+    filter: none;
+}
+.video-container.open {
+    transform-origin: 50% 100%;
 }
 
-.game-link{
+.game-link {
     text-decoration: none;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: bold;
-    
-}
-.game-name{
-    position: relative;
-    top:20px;
-    z-index: 1;
-    filter: drop-shadow(3px 3px #202020);
 }
 
-.game-play{
+.game-name {
+    position: absolute;
+    top: -1em;
+    width: 100%;
+    z-index: 1;
+    filter: drop-shadow(3px 3px #202020);
+    pointer-events: none;
+}
+
+.game-play {
     display: flex;
     justify-content: center;
     text-decoration: none;
     font-size: 48px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    border-radius:25px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, height 0.5s ease;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transform-origin: 50% 0;
 }
 
-.game-play:hover{
-    transition: transform 0.3s ease;
+.game-play:hover {
+    top: 0;
     transform: scale(1.05);
-    border-radius:25px ;
+    /* border-radius: 25px; */
 }
 
-#amphibar{
+.game-play span {
+    transition: transform 0.3s ease;
+}
+
+.game-play:hover span {
+    transform: scaleY(calc(1 / 1.1));
+}
+
+#amphibar {
     color: rgb(101, 199, 221);
 }
 
-#robnnic{
-    color:rgb(227, 134, 53);
+#robnnic {
+    color: rgb(227, 134, 53);
 }
 
-#robnnic-play{
-    background-color:rgb(227, 134, 53) ;
+#robnnic-play {
+    background-color: rgb(227, 134, 53);
 }
 
-#amphibar-play{
+#amphibar-play {
     background-color: rgb(101, 199, 221);
 
 }
 
-.hover-text{
-    display: none;
+.hover-text {
+    height: auto;
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+    transition: height 0.5s ease, opacity 0.5s ease;
 }
 
-.banner .hover-text-visible{
-    display: block;
-    animation:fadeInUp 0.5s ease-in-out forwards;
+.banner .hover-text-visible {
+    opacity: 1;
+    /* height: auto; */
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 
 
 @keyframes fadeInUp {
     from {
-        opacity: 0;
-        transform: translateY(-5px); /* Startposition des Textes */
+        transform: translateY(-25px);
+        /* Startposition des Textes */
     }
+
     to {
-        opacity: 1;
-        transform: translateY(0); /* Endposition des Textes */
+        transform: translateY(0);
+        /* Endposition des Textes */
     }
 }

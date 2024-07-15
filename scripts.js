@@ -28,28 +28,66 @@ document.querySelectorAll('.hover-video').forEach(video => {
         if (video.loop) {
             video.loop = false;
             video.pause();
-            video.style.filter = 'grayscale(100%)';
+            // video.style.filter = 'grayscale(100%)';
         } else {
             video.loop = true;
             video.play();
-            video.style.filter = 'none';
+            // video.style.filter = 'none';
         }
     });
 });
 
 document.querySelectorAll('.hover-video').forEach(video => {
     video.addEventListener('click', () => {
-        const banner = video.closest(".banner")
+        video.classList.toggle('open');
+        video.parentElement.classList.toggle('open');
+        const banner = video.closest(".banner");
         const hoverText = video.closest('.banner').querySelector('.hover-text');
-        if (hoverText.classList.contains('hover-text-visible')) {
-            hoverText.classList.remove('hover-text-visible');
+        if (video.classList.contains('open')) {
+            expandElement(hoverText);
+            banner.scrollIntoView({ behavior: 'smooth', block: 'start' , inline: 'nearest'});
         } else {
-            hoverText.classList.add('hover-text-visible');
-        }
-        if (hoverText.classList.contains('hover-text-visible')) {
-            banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            collapseElement(hoverText);
         }
     });
 });
 
+/**
+ * @param {HTMLElement} _element 
+ */
+function collapseElement(_element){
+    let elemHeight = _element.scrollHeight;
+    let prevTransition = _element.style.transition;
+    _element.style.transition = "";
 
+    requestAnimationFrame(()=>{
+        _element.style.height = elemHeight + "px";
+        _element.style.transition = prevTransition;
+        requestAnimationFrame(()=>{
+            _element.style.height = 0 + "px";
+        });
+    });
+    
+    _element.classList.remove("hover-text-visible");
+}
+
+/**
+ * @param {HTMLElement} _element 
+ */
+function expandElement(_element){
+    let elemHeight = _element.scrollHeight;
+    _element.style.height = elemHeight + "px";
+    _element.addEventListener("transitionend", transitionend);
+    _element.addEventListener("transitioncancel", transitionend);
+    _element.classList.add("hover-text-visible");
+}
+
+const transitionend = (_event) => {
+    let element = _event.target;
+    // element.removeEventListener("transitionend", arguments.callee);
+    element.removeEventListener("transitionend", transitionend);
+    element.removeEventListener("transitioncancel", transitionend);
+    if(_event.type === "transitionend"){
+        element.style.height = null;
+    }
+}
