@@ -107,14 +107,6 @@ video:hover {
     /* border-radius: 25px; */
 }
 
-.game-play span {
-    transition: transform 0.3s ease;
-}
-
-.game-play:hover span {
-    transform: scaleY(calc(1 / 1.1));
-}
-
 #amphibar {
     color: rgb(101, 199, 221);
 }
