@@ -103,8 +103,16 @@ video:hover {
 
 .game-play:hover {
     top: 0;
-    transform: scale(1.05);
+    transform: scaleY(1.1);
     /* border-radius: 25px; */
+}
+
+.game-play span {
+    transition: transform 0.3s ease;
+}
+
+.game-play:hover span {
+    transform: scaleY(calc(1 / 1.1));
 }
 
 #amphibar {
@@ -128,6 +136,7 @@ video:hover {
     height: auto;
     opacity: 0;
     transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
 }
 
 .banner .hover-text-visible {
