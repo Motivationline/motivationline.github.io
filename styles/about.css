@@ -1,37 +1,86 @@
+h2 {
+    text-align: center;
+}
+
 #about-us {
     margin: 2rem 0;
 }
 
+#team-wrapper {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto 0px;
+    transition: 0.25s ease-out;
+}
+
+#team-wrapper:has(.member.show) {
+    grid-template-columns: auto 50%;
+}
+
 #team-members {
-    display: flex;
-    flex-direction: row;
+    justify-self: center;
+    transition: 0.25s ease-out;
 }
 
-.member {
-    background-color: #ffffff4d;
+#team-wrapper:has(.member.show) #team-members {
+    /* margin-left: auto; */
+}
+
+#team-image {
+    position: relative;
+    width: 375px;
+    height: 500px;
+}
+
+#team-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#team-image img.member.highlight {
+    filter: drop-shadow(3px 3px 0 var(--ml-stick-color)) drop-shadow(3px -3px 0 var(--ml-stick-color)) drop-shadow(-3px 3px 0 var(--ml-stick-color)) drop-shadow(-3px -3px 0 var(--ml-stick-color));
+    /* drop-shadow(1px 1px 0 var(--ml-stick-color)) */
+}
+
+#team-member-info {
+}
+
+#team-member-info .member {
+    scroll-margin-top: 90px;
     margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-    flex-basis: 50%;
+    display: none;
 }
 
-.member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.member .socials img {
-    width: 2rem;
-    height: 2rem;
-    background-color: aliceblue;
-}
-
-.member span {
+#team-member-info .member.show {
     display: block;
 }
 
-.role {
-    font-size: smaller;
+.name span {
+    display: block;
+    font-size: 3em;
+    line-height: 1;
+}
+
+.name span:first-of-type {
+    color: var(--ml-stick-color);
+    font-weight: bold;
+}
+
+#info {
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    #team-wrapper {
+        grid-template-columns: auto;
+    }
+
+    #team-wrapper:has(.member.show) {
+        grid-template-columns: auto;
+    }
+
+    #team-member-info {
+        text-align: center;
+    }
 }

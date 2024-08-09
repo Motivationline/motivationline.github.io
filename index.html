@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,27 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script/frontpage.js" defer></script>
 </head>
+
 <body>
-    
-    <img id="motivationline" src="img/motivationline.png">
-    
-    <div class="game-link">
-        <a href="https://discord.gg/F8PeKxP8Gc" target="_blank" rel="noopener noreferrer">
-            <img src="./img/discord.svg" height="30px">
+    <header class="expanded">
+        <a href="/">
+            <img id="motivationline" src="img/motivationline.png">
         </a>
-    </div>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/about/">About Us</a>
+        </nav>
+    </header>
+    <div id="header-scroll-marker"></div>
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div  id="amphibar" class="game-name">AMPHIBAR</div>
+                <div id="amphibar" class="game-name">AMPHIBAR</div>
                 <video class="hover-video" muted>
                     <source src="videos/amphibar.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
@@ -31,13 +38,14 @@
             </div>
         </div>
         <div class="hover-text" style="height: 0;">
-            <a id="amphibar-play" class="game-play" href="Amphibar" target="_blank" rel="noopener noreferrer"><span>PLAY</span></a>
+            <a id="amphibar-play" class="game-play" href="Amphibar" target="_blank"
+                rel="noopener noreferrer"><span>PLAY</span></a>
             <h2>Genre</h2>
             Point n' Click
             <h2>Spielziel</h2>
             <div>
-            Den grummeligen Frosch-Barkeeper davon zu überzeugen,
-             die Bar aufzuschließen, um sie verlassen zu können.
+                Den grummeligen Frosch-Barkeeper davon zu überzeugen,
+                die Bar aufzuschließen, um sie verlassen zu können.
             </div>
             <h2>Spieldauer</h2>
             <div>
@@ -45,26 +53,28 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div id="robnnic" class ="game-name">ROB & NIC</div>
+                <div id="robnnic" class="game-name">ROB & NIC</div>
                 <video class="hover-video" muted>
                     <source src="videos/robnnic.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
                 </video>
             </div>
         </div>
-        <div class="hover-text" style="height: 0;"> 
-            <a id="robnnic-play" class="game-play" href="CardSurvivor" target="_blank" rel="noopener noreferrer"><span>PLAY</span></a>
+        <div class="hover-text" style="height: 0;">
+            <a id="robnnic-play" class="game-play" href="CardSurvivor" target="_blank"
+                rel="noopener noreferrer"><span>PLAY</span></a>
             <h2>Genre</h2>
             Survivors Like
             <h2>Spielziel</h2>
             <div>
                 Das Ziel einer jeden Spielsitzung ist es die letzte Stufe zu erreichen und den finalen Boss zu töten.
-                Das übergreifende Ziel aller Sitzungen zusammen ist es alle Karten zu sammeln und die eigenen Lieblingskarten auf das maximale Level zu upgraden.
+                Das übergreifende Ziel aller Sitzungen zusammen ist es alle Karten zu sammeln und die eigenen
+                Lieblingskarten auf das maximale Level zu upgraden.
             </div>
             <h2>Spieldauer</h2>
             <div>
@@ -75,6 +85,6 @@
 
     <div class="spacer"></div>
 
-    <script src="scripts.js"></script>
 </body>
+
 </html>

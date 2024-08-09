@@ -13,45 +13,85 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="../script/about.js" defer></script>
 
 </head>
 
 <body>
-    <img id="motivationline" src="../img/motivationline.png">
+    <header class="">
+        <a href="/">
+            <img id="motivationline" src="../img/motivationline.png">
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about/" class="active">About Us</a>
+        </nav>
+    </header>
 
     <div id="about-us">
         <div id="team">
             <h2>Das Team</h2>
-            <div id="team-members">
-                <div class="member">
-                    <img src="../img/team/jonas.png" alt="Julien Trübiger">
-                    <div class="socials"></div>
-                    <span class="name">Julien Trübiger</span>
-                    <span class="role">Game Designer</span>
+            <div id="team-wrapper">
+
+                <div id="team-members">
+                    <div id="team-image">
+                        <img class="member" data-member="jonas" src="../img/team/jonas_cutout.png" alt="">
+                        <img class="member" data-member="lukas" src="../img/team/lukas_cutout.png" alt="">
+                        <img class="member" data-member="julien" src="../img/team/julien_cutout.png" alt="">
+                        <img class="member" data-member="maurice" src="../img/team/maurice_cutout.png" alt="">
+                        <img usemap="#team-map" src="../img/team/team_cutout.png" alt="">
+
+                        <map name="team-map">
+                            <area shape="rect" coords="60,80,132,385" data-member="jonas" href="#jonas" alt="">
+                            <area shape="rect" coords="137,62,206,381" data-member="lukas" href="#lukas" alt="">
+                            <area shape="rect" coords="208,67,269,386" data-member="julien" href="#julien" alt="">
+                            <area shape="rect" coords="269,46,352,392" data-member="maurice" href="#maurice" alt="">
+                        </map>
+                    </div>
                 </div>
-                <div class="member">
-                    <img src="../img/team/jonas.png" alt="Maurice Huchler">
-                    <span class="name">Maurice Huchler</span>
-                    <div class="socials"></div>
-                    <span class="role">Game Artist</span>
-                </div>
-                <div class="member">
-                    <img src="../img/team/jonas.png" alt="Jonas Plotzky">
-                    <span class="name">Jonas Plotzky</span>
-                    <div class="socials"></div>
-                    <span class="role">Game Engine Developer</span>
-                </div>
-                <div class="member">
-                    <img src="../img/team/jonas.png" alt="Lukas Scheuerle">
-                    <span class="name">Lukas Scheuerle</span>
-                    <span class="role">Game Developer</span>
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/lukas-scheuerle/" target="_blank"
-                            rel="noopener noreferrer"><img src="../img/icon/linkedin.svg" alt="Li"></a>
+                <div id="team-member-info">
+
+                    <div class="member" data-member="julien">
+                        <span class="name"><span>Julien</span><span>Trübiger</span></span>
+                        <span class="role">Game Designer</span>
+                        <div class="socials"></div>
+                    </div>
+                    <div class="member" data-member="maurice">
+                        <span class="name"><span>Maurice</span><span>Huchler</span></span>
+                        <span class="role">Game Artist</span>
+                        <div class="socials"></div>
+                    </div>
+                    <div class="member" data-member="jonas">
+                        <span class="name"><span>Jonas</span><span>Plotzky</span></span>
+                        <span class="role">Game Engine Developer</span>
+                        <div class="socials"></div>
+                    </div>
+                    <div class="member" data-member="lukas">
+                        <span class="name"><span>Lukas</span><span>Scheuerle</span></span>
+                        <span class="role">Game Developer</span>
+                        <div class="socials">
+                            <a href="https://lukas.scheuerle.net/" target="_blank" rel="noopener noreferrer">Website</a>
+                            -
+                            <a href="https://www.linkedin.com/in/lukas-scheuerle/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="info">
+        <h2>Info</h2>
+        <span>
+            Wer sind wir und was tun wir? <br>
+            Das verraten wir euch bald. <br>
+            Kommt doch solange auf unseren Discord Server! <br>
+        </span>
+        <a href="https://discord.gg/F8PeKxP8Gc" class="no-line" target="_blank" rel="noopener noreferrer">
+            <img src="../img/discord.svg" height="30px">
+        </a>
+
     </div>
 </body>
 

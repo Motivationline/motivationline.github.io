@@ -1,3 +1,8 @@
+:root {
+    --ml-text-color: #072a57;
+    --ml-stick-color: #34cb99;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,16 +16,21 @@ body {
 
 }
 
-
 #motivationline {
     position: relative;
     display: flex;
     width: 70%;
     justify-content: center;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     max-width: 800px;
     filter: drop-shadow(2px 2px #2a2a2a);
-
+    transition: all 0.25s;
+}
+header:not(.expanded) #motivationline{
+    width: unset;
+    height: 2em;
+    margin-top: 10px;
+    filter: drop-shadow(1px 1px #2a2a2a);
 }
 
 h2 {
@@ -30,4 +40,47 @@ h2 {
 
 .spacer {
     height: 3rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ededed;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a {
+    color: var(--ml-text-color);
+    /* color: white; */
+    text-decoration: none;
+    padding: 0.375em;
+    margin: 0.25em;
+    vertical-align: baseline;
+    transition: border 0.25s, padding 0.25s;
+    border-bottom: 0px solid;
+}
+
+header nav a.active,
+header nav a:hover:not(.no-line) {
+    border-bottom: 4px solid var(--ml-stick-color);
+    padding-bottom: calc(0.375em - 4px);
+}
+
+.grower {
+    flex-grow: 1;
+}
+
+#header-scroll-marker {
+    position: absolute;
+    top: calc(100vh + 1px);
+    width: 1px;
+    height: 1px;
 }
