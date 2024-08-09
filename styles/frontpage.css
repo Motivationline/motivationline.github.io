@@ -14,6 +14,7 @@
     margin-top: 50px;
 }
 
+.video-container img,
 .video-container video {
     width: 100%;
     height: auto;
@@ -92,6 +93,10 @@ video:hover {
 
 #robnnic {
     color: rgb(227, 134, 53);
+}
+
+#comingsoon {
+    color: rgb(187, 86, 86);
 }
 
 #robnnic-play {
