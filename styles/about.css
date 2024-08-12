@@ -71,6 +71,26 @@ h2 {
     text-align: center;
 }
 
+.sociallogo {
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.sociallogo:hover {
+    color: #34cb99;
+}
+
+.link {
+    color: #000;
+}
+
+.link:hover {
+    color: #34cb99;
+}
+
 @media screen and (max-width: 750px) {
     #team-wrapper {
         grid-template-columns: auto;
