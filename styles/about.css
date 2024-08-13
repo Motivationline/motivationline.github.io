@@ -65,7 +65,7 @@ h2 {
 
 .member-hover-container:hover ~ img,
 #team-image img.member.highlight {
-    filter: drop-shadow(3px 3px 0 var(--ml-stick-color)) drop-shadow(3px -3px 0 var(--ml-stick-color)) drop-shadow(-3px 3px 0 var(--ml-stick-color)) drop-shadow(-3px -3px 0 var(--ml-stick-color));
+    filter: drop-shadow(2px 2px 0 var(--ml-stick-color)) drop-shadow(2px -2px 0 var(--ml-stick-color)) drop-shadow(-2px 2px 0 var(--ml-stick-color)) drop-shadow(-2px -2px 0 var(--ml-stick-color));
     z-index: 4;
 }
 .member-hover-container:hover ~ img {
