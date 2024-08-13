@@ -97,14 +97,14 @@ img.member.default.highlight {
 }
 
 #member-lukas{
-    margin-right: -25%;
-    margin-left: 25%;
+    margin-right: -5%;
+    margin-left: 5%;
 
 }
 #member-julien{
     margin-right: 25%;
     margin-left: -25%;
-    /* margin-bottom: -13%;
+    top: 4%;    /* margin-bottom: -13%;
     margin-top: 13%; */
 }
 #member-maurice{
