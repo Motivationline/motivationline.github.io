@@ -1,3 +1,5 @@
+
+
 h2 {
     text-align: center;
 }
@@ -8,9 +10,11 @@ h2 {
 
 #team-wrapper {
     display: grid;
-    width: 100vw;
-    grid-template-columns: auto 0px;
+    width: 100%;
+    max-width: 1500px;
     transition: 0.25s ease-out;
+    position: relative;
+    box-sizing: border-box;
 }
 
 #team-wrapper:has(.member.show) {
@@ -20,6 +24,7 @@ h2 {
 #team-members {
     justify-self: center;
     transition: 0.25s ease-out;
+    display: contents;
 }
 
 #team-wrapper:has(.member.show) #team-members {
@@ -27,15 +32,19 @@ h2 {
 }
 
 #team-image {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: -10px;
+    width: 100%;
     position: relative;
-    width: 375px;
-    height: 500px;
+    height: auto;
 }
 
 #team-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    
 }
 
 #team-image img.member.highlight {
@@ -56,6 +65,29 @@ h2 {
     display: block;
 }
 
+#member-jonas{
+    margin-right: -100%;
+    z-index: 2;
+}
+
+#member-lukas{
+    margin-left: -20%;
+    margin-right: -80%;
+    z-index: 2;
+
+}
+#member-julien{
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+    margin-left: -50%;
+    margin-right: -50%;
+    z-index: 2;
+}
+#member-maurice{
+    margin-left: -100%;
+    z-index: 1;
+}
 .name span {
     display: block;
     font-size: 3em;
@@ -93,7 +125,7 @@ h2 {
 
 @media screen and (max-width: 750px) {
     #team-wrapper {
-        grid-template-columns: auto;
+        
     }
 
     #team-wrapper:has(.member.show) {

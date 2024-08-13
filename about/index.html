@@ -31,22 +31,36 @@
 
     <div id="about-us">
         <div id="team">
-            <h2>Das Team</h2>
+            <h2>DAS TEAM</h2>
             <div id="team-wrapper">
-
                 <div id="team-members">
                     <div id="team-image">
-                        <img class="member" data-member="jonas" src="../img/team/jonas_cutout.png" alt="">
-                        <img class="member" data-member="lukas" src="../img/team/lukas_cutout.png" alt="">
-                        <img class="member" data-member="julien" src="../img/team/julien_cutout.png" alt="">
-                        <img class="member" data-member="maurice" src="../img/team/maurice_cutout.png" alt="">
-                        <img usemap="#team-map" src="../img/team/team_cutout.png" alt="">
+                        <div id="member-jonas">
+                            <img  class="member" data-member="jonas" usemap="#jonas-map" src="../img/team/jonas_cutout.png" alt="">
+                        </div>
+                        <div id="member-lukas">
+                            <img class="member" data-member="lukas" usemap="#lukas-map" src="../img/team/lukas_cutout.png" alt="">
+                        </div>
 
-                        <map name="team-map">
-                            <area shape="rect" coords="60,80,132,385" data-member="jonas" href="#jonas" alt="">
-                            <area shape="rect" coords="137,62,206,381" data-member="lukas" href="#lukas" alt="">
-                            <area shape="rect" coords="208,67,269,386" data-member="julien" href="#julien" alt="">
-                            <area shape="rect" coords="269,46,352,392" data-member="maurice" href="#maurice" alt="">
+                        <div id="member-julien">
+                            <img class="member" data-member="julien" usemap="#julien-map" src="../img/team/julien_cutout.png" alt="">
+                        </div>
+
+                        <div id="member-maurice">
+                            <img class="member" data-member="maurice" usemap="#maurice-map" src="../img/team/maurice_cutout.png" alt="">
+                        </div>
+
+                        <map name="jonas-map">
+                            <area shape="rect" coords="450,0,550,1000" data-member="jonas" href="#jonas" alt="">
+                        </map>
+                        <map name="lukas-map">
+                            <area shape="rect" coords="250,0,750,1000" data-member="lukas" href="#lukas" alt="">
+                        </map>
+                        <map name="julien-map">
+                            <area shape="rect" coords="450,0,550,1000" data-member="julien" href="#julien" alt="">
+                        </map>
+                        <map name="maurice-map">
+                            <area shape="rect" coords="250,0,750,1000" data-member="maurice" href="#maurice" alt="">
                         </map>
                     </div>
                 </div>
