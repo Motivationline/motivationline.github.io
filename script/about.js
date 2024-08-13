@@ -4,22 +4,22 @@ function teamHover() {
     const teamImages = document.querySelectorAll("#team-members img.member");
     const teamInfos = document.querySelectorAll("#team-member-info .member");
     let activeMember;
-    Array.from(document.getElementsByTagName("area")).forEach(element => {
-        element.addEventListener("mouseover", () => {
-            for (let img of teamImages) {
-                img.classList.remove("highlight");
-                if (img.dataset.member === element.dataset.member)
-                    img.classList.add("highlight");
-            }
-        });
-        element.addEventListener("mouseout", () => {
-            for (let img of teamImages) {
-                if (img.dataset.member === element.dataset.member)
-                    img.classList.remove("highlight");
-                if (img.dataset.member === activeMember)
-                    img.classList.add("highlight");
-            }
-        });
+    Array.from(document.querySelectorAll(".member-hover-container")).forEach(element => {
+        // element.addEventListener("mouseover", () => {
+        //     for (let img of teamImages) {
+        //         img.classList.remove("highlight");
+        //         if (img.dataset.member === element.dataset.member)
+        //             img.classList.add("highlight");
+        //     }
+        // });
+        // element.addEventListener("mouseout", () => {
+        //     for (let img of teamImages) {
+        //         if (img.dataset.member === element.dataset.member)
+        //             img.classList.remove("highlight");
+        //         if (img.dataset.member === activeMember)
+        //             img.classList.add("highlight");
+        //     }
+        // });
         element.addEventListener("click", () => {
             for (let info of teamInfos) {
                 if (info.dataset.member === element.dataset.member) {
