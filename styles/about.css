@@ -124,6 +124,8 @@ img.member.default.highlight {
 
 #info {
     text-align: center;
+    width: 50%;
+    padding-bottom: 50px;
 }
 
 .sociallogo {
@@ -157,5 +159,9 @@ img.member.default.highlight {
 
     #team-member-info {
         text-align: center;
+    }
+
+    #info {
+        width: 90%;
     }
 }
