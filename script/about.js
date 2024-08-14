@@ -31,7 +31,7 @@ function teamHover() {
                         }
                     } else {
                         info.classList.add("show");
-                        info.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                        // info.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
                         // info.scrollIntoView();
                         activeMember = info.dataset.member;
                         for (let img of teamImages) {
