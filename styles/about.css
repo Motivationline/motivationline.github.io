@@ -1,4 +1,6 @@
-
+body {
+    scroll-behavior: smooth;
+}
 
 h2 {
     text-align: center;
@@ -94,6 +96,7 @@ img.member.default.highlight {
 #member-jonas{
     margin-right: -50%;
     margin-left: 50%;
+    top: -5%;
 }
 
 #member-lukas{
@@ -110,6 +113,7 @@ img.member.default.highlight {
 #member-maurice{
     margin-right: 50%;
     margin-left: -50%;
+   
 }
 .name span {
     display: block;
