@@ -96,7 +96,7 @@ img.member.default.highlight {
 #member-jonas{
     margin-right: -50%;
     margin-left: 50%;
-    top: -5%;
+    top: -3vh;
 }
 
 #member-lukas{
@@ -107,7 +107,7 @@ img.member.default.highlight {
 #member-julien{
     margin-right: 25%;
     margin-left: -25%;
-    top: 4%;    /* margin-bottom: -13%;
+    top: 2vh;    /* margin-bottom: -13%;
     margin-top: 13%; */
 }
 #member-maurice{
