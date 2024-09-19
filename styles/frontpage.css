@@ -95,6 +95,11 @@ video:hover {
     color: rgb(227, 134, 53);
 }
 
+#brawlyard{
+    color: rgb(63, 197, 10);
+
+}
+
 #comingsoon {
     color: rgb(187, 86, 86);
 }
@@ -105,6 +110,9 @@ video:hover {
 
 #amphibar-play {
     background-color: rgb(101, 199, 221);
+}
+#brawlyard-play {
+    background-color: rgb(63, 197, 10);
 
 }
 
