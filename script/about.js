@@ -1,5 +1,6 @@
 teamHover();
 
+
 function teamHover() {
     const teamImages = document.querySelectorAll("#team-members img.member");
     const teamInfos = document.querySelectorAll("#team-member-info .member");
@@ -37,7 +38,13 @@ function teamHover() {
                         for (let img of teamImages) {
                             img.classList.remove("highlight");
                             if (img.dataset.member === element.dataset.member)
+                            {
+                                let src = img.src;
+                                img.src = "";
+                                img.src = src + '?' + new Date().getTime();
                                 img.classList.add("highlight");
+                            }
+                                
                         }
                     }
                 } else {
