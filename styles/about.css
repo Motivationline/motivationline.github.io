@@ -47,6 +47,7 @@ h2 {
 .member-img {
     position: relative;
     user-select: none;
+    pointer-events: none;
 }
 
 .member-hover-container {
@@ -57,13 +58,18 @@ h2 {
     bottom: 0;
     right: 0;
     z-index: 6;
+    pointer-events: all;
+}
+
+.member-hover-container[data-member="jirka"] {
+    width: 13%;
 }
 
 .member-hover-container:hover {
     z-index: 8;
 }
 
-#team-image img {
+#team-members img {
     width: 200%;
     height: auto;
     position: relative;
@@ -71,7 +77,7 @@ h2 {
 }
 
 .member-hover-container:hover~img,
-#team-image img.member.highlight {
+img.member.highlight {
     filter: drop-shadow(2px 2px 0 var(--ml-stick-color)) drop-shadow(2px -2px 0 var(--ml-stick-color)) drop-shadow(-2px 2px 0 var(--ml-stick-color)) drop-shadow(-2px -2px 0 var(--ml-stick-color));
     z-index: 4;
 }
@@ -117,14 +123,14 @@ img.member.default.highlight {
 #member-jirka {
     position: fixed;
     left: 0px;
-    top: 30%;
+    /* top: 30%; */
     z-index: 100;
-    transform: translateY(-50%);
-
+    transform: translateY(-20%);
 }
 
 #member-jirka img {
     width: 50%;
+    left: 0;
 }
 
 #member-jonas {
