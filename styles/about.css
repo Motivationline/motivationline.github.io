@@ -16,7 +16,7 @@ h2 {
     max-width: 1500px;
     grid-template-columns: 50% 0px;
     transition: 0.25s ease-out;
-    position: relative;
+    /* position: relative; */
     box-sizing: border-box;
     justify-content: center;
 }
@@ -121,7 +121,7 @@ img.member.default.highlight {
 }
 
 #member-jirka {
-    position: fixed;
+    position: absolute;
     left: 0px;
     /* top: 30%; */
     z-index: 100;
