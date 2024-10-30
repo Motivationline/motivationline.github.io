@@ -168,9 +168,11 @@ img.member.default.highlight {
 .name span.rank {
     font-size: calc(1em / 3);
     display: inline;
+    color: #000;
+    font-weight: normal;
 }
 
-.name span:first-of-type {
+.name span:not(.rank):first-of-type {
     color: var(--ml-stick-color);
     font-weight: bold;
 }
