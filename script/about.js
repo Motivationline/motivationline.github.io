@@ -41,7 +41,7 @@ function teamHover() {
                             {
                                 let src = img.src;
                                 img.src = "";
-                                img.src = src //+ '?' + new Date().getTime();
+                                img.src = src + '?' + new Date().getTime();
                                 img.classList.add("highlight");
                             }
                                 

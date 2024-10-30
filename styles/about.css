@@ -37,7 +37,7 @@ h2 {
 
 #team-image {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     position: relative;
     height: auto;
@@ -58,6 +58,7 @@ h2 {
     right: 0;
     z-index: 6;
 }
+
 .member-hover-container:hover {
     z-index: 8;
 }
@@ -69,21 +70,25 @@ h2 {
     left: -50%;
 }
 
-.member-hover-container:hover ~ img,
+.member-hover-container:hover~img,
 #team-image img.member.highlight {
     filter: drop-shadow(2px 2px 0 var(--ml-stick-color)) drop-shadow(2px -2px 0 var(--ml-stick-color)) drop-shadow(-2px 2px 0 var(--ml-stick-color)) drop-shadow(-2px -2px 0 var(--ml-stick-color));
     z-index: 4;
 }
-.member-hover-container:hover ~ img {
+
+.member-hover-container:hover~img {
     z-index: 5;
 }
-.member-hover-container:hover ~ img.member.hover:not(.highlight),
+
+.member-hover-container:hover~img.member.hover:not(.highlight),
 img.member.active.highlight {
     display: initial;
 }
-img.member.hover, img.member.active,
-.member-hover-container:hover ~ img.member.default,
-img.member.default.highlight { 
+
+img.member.hover,
+img.member.active,
+.member-hover-container:hover~img.member.default,
+img.member.default.highlight {
     display: none;
 }
 
@@ -93,6 +98,7 @@ img.member.default.highlight {
     opacity: 0;
     transition: opacity 1s;
 }
+
 #team-wrapper:has(.member.show) #team-member-info {
     width: 50vw;
     opacity: 1;
@@ -108,28 +114,45 @@ img.member.default.highlight {
     display: block;
 }
 
-#member-jonas{
+#member-jirka {
+    position: fixed;
+    left: 0px;
+    top: 30%;
+    z-index: 100;
+    transform: translateY(-50%);
+
+}
+
+#member-jirka img {
+    width: 50%;
+}
+
+#member-jonas {
     margin-right: -50%;
     margin-left: 50%;
     top: -3vh;
 }
 
-#member-lukas{
+#member-lukas {
     margin-right: -5%;
     margin-left: 5%;
 
 }
-#member-julien{
+
+#member-julien {
     margin-right: 25%;
     margin-left: -25%;
-    top: 1vh;    /* margin-bottom: -13%;
+    top: 1vh;
+    /* margin-bottom: -13%;
     margin-top: 13%; */
 }
-#member-maurice{
+
+#member-maurice {
     margin-right: 50%;
     margin-left: -50%;
-   
+
 }
+
 .name span {
     display: block;
     font-size: 3em;
