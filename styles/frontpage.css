@@ -100,6 +100,11 @@ video:hover {
 
 }
 
+#eumlinge{
+    color: #e2a249;
+
+}
+
 #comingsoon {
     color: rgb(187, 86, 86);
 }
@@ -113,7 +118,9 @@ video:hover {
 }
 #brawlyard-play {
     background-color: #64cb33;
-
+}
+#eumling-play {
+    background-color: #e2a249;
 }
 
 .hover-text {
