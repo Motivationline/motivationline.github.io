@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="../script/about.js" defer></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script type="module" src="../script/lang.mjs"></script>
 
     <meta property="og:title" content="Motivationline - Über Uns" />
     <meta property="og:type" content="website" />
@@ -30,54 +32,62 @@
             <img id="motivationline" src="../img/motivationline.png">
         </a>
         <nav>
-            <a href="/">Home</a>
-            <a href="/about/" class="active">About Us</a>
+            <a href="/" data-t="header.home">Startseite</a>
+            <a href="/about/" class="active" data-t="header.about">Über uns</a>
         </nav>
     </header>
 
     <div id="about-us">
         <div id="team">
-            <h2>DAS TEAM</h2>
+            <h2 data-t="about.team">Das Team</h2>
             <div id="team-wrapper">
                 <div id="team-members">
 
                     <div class="member-img" id="member-jirka">
                         <div class="member-hover-container" data-member="jirka"></div>
-                        <img class="member default" data-member="jirka" src="../img/team/jirka_cutout.png" alt="">
-                        <img class="member hover" data-member="jirka" src="../img/team/jirka_hover.png" alt="">
+                        <img class="member default" data-member="jirka" src="../img/team/jirka_cutout.png" alt="Jirka">
+                        <img class="member hover" data-member="jirka" src="../img/team/jirka_hover.png" alt="Jirka">
                         <img id="gif-jirka" class="member active" data-member="jirka" src="../img/team/jirka_click.gif"
-                            alt="">
+                            alt="Jirka">
                     </div>
                     <div id="team-image">
 
                         <div class="member-img" id="member-jonas">
                             <div class="member-hover-container" data-member="jonas"></div>
-                            <img class="member default" data-member="jonas" src="../img/team/jonas_cutout.png" alt="">
-                            <img class="member hover" data-member="jonas" src="../img/team/jonas_hover.png" alt="">
+                            <img class="member default" data-member="jonas" src="../img/team/jonas_cutout.png"
+                                alt="Jonas">
+                            <img class="member hover" data-member="jonas" src="../img/team/jonas_hover.png" alt="Jonas">
                             <img id="gif-jonas" class="member active" data-member="jonas"
-                                src="../img/team/jonas_click.gif" alt="">
+                                src="../img/team/jonas_click.gif" alt="Jonas">
                         </div>
 
                         <div class="member-img" id="member-lukas">
                             <div class="member-hover-container" data-member="lukas"></div>
-                            <img class="member default" data-member="lukas" src="../img/team/lukas_cutout.png" alt="">
-                            <img class="member hover" data-member="lukas" src="../img/team/lukas_hover.png" alt="">
-                            <img class="member active" data-member="lukas" src="../img/team/lukas_click.gif" alt="">
+                            <img class="member default" data-member="lukas" src="../img/team/lukas_cutout.png"
+                                alt="Lukas">
+                            <img class="member hover" data-member="lukas" src="../img/team/lukas_hover.png" alt="Lukas">
+                            <img class="member active" data-member="lukas" src="../img/team/lukas_click.gif"
+                                alt="Lukas">
                         </div>
 
                         <div class="member-img" id="member-julien">
                             <div class="member-hover-container" data-member="julien"></div>
-                            <img class="member default" data-member="julien" src="../img/team/julien_cutout.png" alt="">
-                            <img class="member hover" data-member="julien" src="../img/team/julien_hover.png" alt="">
-                            <img class="member active" data-member="julien" src="../img/team/julien_click.gif" alt="">
+                            <img class="member default" data-member="julien" src="../img/team/julien_cutout.png"
+                                alt="Julien">
+                            <img class="member hover" data-member="julien" src="../img/team/julien_hover.png"
+                                alt="Julien">
+                            <img class="member active" data-member="julien" src="../img/team/julien_click.gif"
+                                alt="Julien">
                         </div>
 
                         <div class="member-img" id="member-maurice">
                             <div class="member-hover-container" data-member="maurice"></div>
                             <img class="member default" data-member="maurice" src="../img/team/maurice_cutout.png"
-                                alt="">
-                            <img class="member hover" data-member="maurice" src="../img/team/maurice_hover.png" alt="">
-                            <img class="member active" data-member="maurice" src="../img/team/maurice_click.gif" alt="">
+                                alt="Maurice">
+                            <img class="member hover" data-member="maurice" src="../img/team/maurice_hover.png"
+                                alt="Maurice">
+                            <img class="member active" data-member="maurice" src="../img/team/maurice_click.gif"
+                                alt="Maurice">
                         </div>
                     </div>
                 </div>
@@ -85,17 +95,24 @@
 
                     <div class="member" data-member="julien">
                         <span class="name"><span>Julien</span><span>Trübiger</span></span>
-                        <span class="role">
-                            Game Designer <br> <br>
-                            Julien ist der Game Designer der Bande. Mit seinem Signature-Move <i>"Ist super,
-                                aber..."</i> liebt er es, sein Team auf Trab zu halten und balanciert jeden Tag auf
-                            Messers Schneide zwischen Perfektion und einem blauen Auge. Bisher ist weder noch
-                            eingetreten. <br> <br>
-                            Er nimmt seinen Job sogar so ernst, dass er selbst in seiner Freizeit Videospiele spielt,
-                            denn selbstverständlich muss man Spiele spielen, um sie entwickeln zu können. Er selbst
-                            bezeichnet sich auch als ungeschlagenen Super Smash Bros. Ultimate-Spieler, wobei er nicht
-                            ganz begreift, dass man auch gegen andere spielen muss, um als ungeschlagen zu gelten.
-                        </span>
+                        <div class="info">
+                            <p class="info-role" data-t="about.julien.role">
+                                Game Designer
+                            </p>
+                            <p class="info-description" data-t="about.julien.description1">
+                                Julien ist der Game Designer der Bande. Mit seinem Signature-Move <i>"Ist super,
+                                    aber..."</i> liebt er es, sein Team auf Trab zu halten und balanciert jeden Tag auf
+                                Messers Schneide zwischen Perfektion und einem blauen Auge. Bisher ist weder noch
+                                eingetreten.
+                            </p>
+                            <p class="info-description" data-t="about.julien.description2">
+                                Er nimmt seinen Job sogar so ernst, dass er selbst in seiner Freizeit Videospiele
+                                spielt, denn selbstverständlich muss man Spiele spielen, um sie entwickeln zu können. Er
+                                selbst bezeichnet sich auch als ungeschlagenen Super Smash Bros. Ultimate-Spieler, wobei
+                                er nicht ganz begreift, dass man auch gegen andere spielen muss, um als ungeschlagen zu
+                                gelten.
+                            </p>
+                        </div>
                         <div class="socials">
                             <a class="sociallogo" href="https://julien.truebiger.de/" target="_blank"
                                 rel="noopener noreferrer">
@@ -113,17 +130,27 @@
                     </div>
                     <div class="member" data-member="maurice">
                         <span class="name"><span>Maurice</span><span>Huchler</span></span>
-                        <span class="role">
-                            Game Artist <br> <br>
-                            Maurice ist derjenige, ohne den keines unserer Spiele überhaupt anschaubar wäre. Wann immer
-                            ein verrückter neuer Charakter, eine atemberaubende Landschaft oder eine knochenbrechende
-                            Animation benötigt wird, ist Maurice allzeit bereit, um mit Schweiß, Blut und etwas Tinte
-                            jede Fantasie wahr werden zu lassen. <br> <br>
-                            Angeblich hat Maurice "vergessen", seine World of Warcraft Subscription zu kündigen,
-                            weswegen wir zurzeit überhaupt froh sind, dass er sich <i>- aus uns unerklärlichen Gründen
-                                -</i> jeden Tag aufs Neue dazu entscheidet, uns mit seiner unverzichtbaren Kunst zu
-                            beliefern.
-                        </span>
+                        <div class="info">
+                            <p class="info-role" data-t="about.maurice.role">
+                                Game Artist
+                            </p>
+                            <p class="info-description" data-t="about.maurice.description1">
+                                Maurice ist derjenige, ohne den keines unserer Spiele überhaupt anschaubar wäre. Wann
+                                immer
+                                ein verrückter neuer Charakter, eine atemberaubende Landschaft oder eine
+                                knochenbrechende
+                                Animation benötigt wird, ist Maurice allzeit bereit, um mit Schweiß, Blut und etwas
+                                Tinte
+                                jede Fantasie wahr werden zu lassen.
+                            </p>
+                            <p class="info-description" data-t="about.maurice.description2">
+                                Angeblich hat Maurice "vergessen", seine World of Warcraft Subscription zu kündigen,
+                                weswegen wir zurzeit überhaupt froh sind, dass er sich <i>- aus uns unerklärlichen
+                                    Gründen
+                                    -</i> jeden Tag aufs Neue dazu entscheidet, uns mit seiner unverzichtbaren Kunst zu
+                                beliefern.
+                            </p>
+                        </div>
                         <div class="socials">
                             <a class="sociallogo" href="https://www.artstation.com/studiohuch" target="_blank"
                                 rel="noopener noreferrer">
@@ -141,18 +168,25 @@
                     </div>
                     <div class="member" data-member="jonas">
                         <span class="name"><span>Jonas</span><span>Plotzky</span></span>
-                        <span class="role">
-                            Game Engine Developer <br> <br>
-                            Jonas ist der Verrückte, der unsere hochschuleigene Game Engine namens <a class="link"
-                                href="https://hs-furtwangen.github.io/FUDGE/" target="_blank">FUDGE</a> entwickelt.
-                            Manchmal fühlt es sich an, als wären wir in der Steinzeit, wenn Jonas wieder mit einem neuen
-                            Feature um die Ecke kommt und wir alle gucken, als hätte er gerade das Feuer erfunden. <br>
-                            <br>
-                            Falls wir aber irgendwann mal in die Steinzeit zurückkatapultiert werden sollten, dann
-                            Achtung! Jonas kann nämlich nicht nur programmieren, sondern geht auch regelmäßig bouldern,
-                            was ihn zu einer höchst gefährlichen und seltenen Kombination aus Gehirn und Muskelmasse
-                            macht.
-                        </span>
+                        <div class="info">
+                            <p class="info-role" data-t="about.jonas.role">
+                                Game Engine Developer
+                            </p>
+                            <p class="info-description" data-t="about.jonas.description1">
+                                Jonas ist der Verrückte, der unsere hochschuleigene Game Engine namens <a class="link"
+                                    href="https://hs-furtwangen.github.io/FUDGE/" target="_blank">FUDGE</a> entwickelt.
+                                Manchmal fühlt es sich an, als wären wir in der Steinzeit, wenn Jonas wieder mit einem
+                                neuen
+                                Feature um die Ecke kommt und wir alle gucken, als hätte er gerade das Feuer erfunden.
+                            </p>
+                            <p class="info-description" data-t="about.jonas.description2">
+                                Falls wir aber irgendwann mal in die Steinzeit zurückkatapultiert werden sollten, dann
+                                Achtung! Jonas kann nämlich nicht nur programmieren, sondern geht auch regelmäßig
+                                bouldern,
+                                was ihn zu einer höchst gefährlichen und seltenen Kombination aus Gehirn und Muskelmasse
+                                macht.
+                            </p>
+                        </div>
                         <div class="socials">
                             <a class="sociallogo" href="https://github.com/plojo" target="_blank"
                                 rel="noopener noreferrer">
@@ -161,17 +195,26 @@
                         </div>
                     </div>
                     <div class="member" data-member="jirka">
-                        <span class="name"><span><span class="rank">Prof.</span> Jirka</span><span>Dell'Oro-Friedl</span></span>
-                        <span class="role">
-                            Project Leader <br> <br>
-                            Jirka sieht alles. Er ist auf irgendeine Weise der Schöpfer des Projektes, unser Oberhaupt
-                            und der Schöpfer der <a class="link" href="https://hs-furtwangen.github.io/FUDGE/"
-                                target="_blank">FUDGE</a> Engine. Er ist derjenige, der dieses Projekt an Land gezogen
-                            hat – und dafür sorgt, dass wir es auch bis zum Ende durchziehen.<br> <br>
-                            Wenn er nicht gerade neue Dimensionen in FUDGE erschafft, findet man ihn meistens im
-                            Spiellabor, wo man ihn live dabei erleben kann, wie er seine verrückten Ideen in die Tat
-                            umsetzt. Aber aufgepasst, seine Liebe für Spieleentwicklung ist höchst ansteckend!
-                        </span>
+                        <span class="name"><span><span class="rank" data-t="about.title.professor">Prof.</span>
+                                Jirka</span><span>Dell'Oro-Friedl</span></span>
+                        <div class="info">
+                            <p class="info-role" data-t="about.jirka.role">
+                                Project Leader
+                            </p>
+                            <p class="info-description" data-t="about.jirka.description1">
+                                Jirka sieht alles. Er ist auf irgendeine Weise der Schöpfer des Projektes, unser
+                                Oberhaupt
+                                und der Schöpfer der <a class="link" href="https://hs-furtwangen.github.io/FUDGE/"
+                                    target="_blank">FUDGE</a> Engine. Er ist derjenige, der dieses Projekt an Land
+                                gezogen
+                                hat – und dafür sorgt, dass wir es auch bis zum Ende durchziehen.
+                            </p>
+                            <p class="info-description" data-t="about.jirka.description2">
+                                Wenn er nicht gerade neue Dimensionen in FUDGE erschafft, findet man ihn meistens im
+                                Spiellabor, wo man ihn live dabei erleben kann, wie er seine verrückten Ideen in die Tat
+                                umsetzt. Aber aufgepasst, seine Liebe für Spieleentwicklung ist höchst ansteckend!
+                            </p>
+                        </div>
                         <div class="socials">
                             <a class="sociallogo" href="https://github.com/JirkaDellOro" target="_blank"
                                 rel="noopener noreferrer">
@@ -185,18 +228,28 @@
                     </div>
                     <div class="member" data-member="lukas">
                         <span class="name"><span>Lukas</span><span>Scheuerle</span></span>
-                        <span class="role">
-                            Game Developer <br> <br>
-                            Lukas ist der Hacker im Team. Wenn ein Feature im Game fehlt, dann nur, weil Lukas noch
-                            nicht dazu kam, und wenn ein Feature im Game ist, dann nur weil Lukas-. Das Einzige, was ihn
-                            aufhalten kann, ist die Zeit - was echt beängstigend sein kann, wenn man darüber nachdenkt,
-                            wie unaufhaltbar er wäre, wenn Tage mehr als 24 Stunden hätten. <br> <br>
-                            Wann immer Lukas nicht damit beschäftigt ist, mal eben schnell Multiplayer zu unseren Games
-                            hinzuzufügen, entwickelt und programmiert er gerne Mods, Resource Packs und Maps für
-                            Minecraft. Er hat so viele Projekte am Laufen, dass es nur eine Frage der Zeit ist, bis er
-                            seine Millionen verdient und uns verlässt, weswegen wir jede weitere Woche mit Lukas als
-                            Erfolg feiern.
-                        </span>
+                        <div class="info">
+                            <p class="info-role" data-t="about.lukas.role">
+                                Game Developer
+                            </p>
+                            <p class="info-description" data-t="about.lukas.description1">
+                                Lukas ist der Hacker im Team. Wenn ein Feature im Game fehlt, dann nur, weil Lukas noch
+                                nicht dazu kam, und wenn ein Feature im Game ist, dann nur weil Lukas-. Das Einzige, was
+                                ihn
+                                aufhalten kann, ist die Zeit - was echt beängstigend sein kann, wenn man darüber
+                                nachdenkt,
+                                wie unaufhaltbar er wäre, wenn Tage mehr als 24 Stunden hätten.
+                            </p>
+                            <p class="info-description" data-t="about.lukas.description2">
+                                Wann immer Lukas nicht damit beschäftigt ist, mal eben schnell Multiplayer zu unseren
+                                Games
+                                hinzuzufügen, entwickelt und programmiert er gerne Mods, Resource Packs und Maps für
+                                Minecraft. Er hat so viele Projekte am Laufen, dass es nur eine Frage der Zeit ist, bis
+                                er
+                                seine Millionen verdient und uns verlässt, weswegen wir jede weitere Woche mit Lukas als
+                                Erfolg feiern.
+                            </p>
+                        </div>
                         <div class="socials">
                             <a class="sociallogo" href="https://lukas.scheuerle.net/" target="_blank"
                                 rel="noopener noreferrer">
@@ -218,23 +271,33 @@
     </div>
 
     <div id="info">
-        <h2>DAS PROJEKT</h2>
-        <span>
-            <i>Motivationline, assemble!</i> <br>
+        <h2 data-t="about.project.title">Das Projekt</h2>
+        <span><em data-t="about.project.tagline">Motivationline, assemble!</em></span>
+        <p data-t="about.project.description1">
             Wir sind die Motivationline, ein kleines Team der <a class="link" href="https://www.hs-furtwangen.de"
-                target="_blank">Hochschule Furtwangen</a>, mit dem Ziel, ein browserbasiertes Serious Game zu
-            entwickeln, das motiviert. <br>
+                target="_blank">Hochschule Furtwangen</a>, mit dem Ziel im Rahmen des Projekts "Boostline" des Landes
+            Baden-Württemberg ein browserbasiertes Serious Game zu entwickeln, das motiviert.
+        </p>
+        <p data-t="about.project.description2">
             Wen oder was soll es motivieren, höre ich euch fragen? Das Spiel zielt darauf ab, Schülerinnen und Schüler
             der Sekundarstufe I und II für Fragen der Berufs- und Studienorientierung zu interessieren und erste
-            Informationen zu vermitteln. <br>
+            Informationen zu vermitteln.
+        </p>
+        <p data-t="about.project.description3">
             Klingt das interessant? Na dann joint doch unserem Discord-Server, wo ihr als Erste unsere neuen Prototypen
-            testen und uns Feedback geben könnt. <br>
+            testen und uns Feedback geben könnt.
+        </p>
         </span>
         <a class="sociallogo" href="https://discord.gg/F8PeKxP8Gc" class="no-line" target="_blank"
             rel="noopener noreferrer">
             <i class="fa-brands fa-discord"></i>
         </a>
 
+    </div>
+        
+    <div class="lang-switcher">
+        <span class="lang-switch-button" data-lang="de">🇩🇪</span>
+        <span class="lang-switch-button" data-lang="en">🇬🇧</span>
     </div>
 </body>
 

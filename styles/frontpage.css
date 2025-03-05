@@ -56,6 +56,7 @@ video:hover {
     z-index: 1;
     filter: drop-shadow(3px 3px #202020);
     pointer-events: none;
+    text-transform: uppercase;
 }
 
 .game-play {
@@ -71,6 +72,7 @@ video:hover {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     transform-origin: 50% 0;
+    text-transform: uppercase;
 }
 
 .game-play:hover {

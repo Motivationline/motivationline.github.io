@@ -1,0 +1,77 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About Us"
+    },
+    "game": {
+        "generic": {
+            "video_error": "Your browser doesn't support this video format",
+            "genre": "Genre",
+            "goal": "Goal",
+            "duration": "Duration",
+            "play": "play"
+        },
+        "amphibar": {
+            "title": "Amphibar",
+            "genre": "Point n' Click",
+            "goal": "Can you convince the grumpy frog barkeeper to open the door of his bar so you can leave? (🇩🇪 only)",
+            "duration": "10-15 minutes"
+        },
+        "rob-nic": {
+            "title": "Rob & Nic",
+            "genre": "Survivors-Like",
+            "goal": "The goal of every playsession is to reach the last room and kill the final boss. The overarching goal of all sessions is to collect all cards and upgrade your personal favorites to the max level.",
+            "duration": "5-30 minutes depending on what you feel like"
+        },
+        "brawlyard": {
+            "title": "Brawlyard",
+            "genre": "Multiplayer-Brawl-Like",
+            "goal": "Prove yourself in 1v1 or 2v2 and show others what skill means.",
+            "duration": "5-30 minutes or until your opponent quits"
+        },
+        "eumlinge": {
+            "title": "The Eumlings",
+            "genre": "Cozy-Sandbox",
+            "goal": "Welcome to the eumlings. Lean back, relax and find the most fitting eumling for the workstations. What could go wrong? (🇩🇪 only)",
+            "duration": "10-15 minutes depending on what you feel like"
+        }
+    },
+    "about": {
+        "team": "The Team",
+        "title": {
+            "professor": "Prof."
+        },
+        "julien": {
+            "role": "Game Designer",
+            "description1": "Julien ist the gangs game designer. He loves to keep his team on their toes with his signature move <i>\"It's great, but...\"</i> and spends every day on a razor's edge between perfection and a black eye. So far, neither happened.",
+            "description2": "He takes his job so seriously, he even plays videogames in his free time, because naturally you need to play games to develop games. He calls himself an undefeated Super Smash Bros. Ultimate player, though he doesn't seem to understand that to claim this title he needs to play against other players in the first place."
+        },
+        "maurice": {
+            "role": "Game Artist",
+            "description1": "Without Maurice, none of our games would be presentable. Whenever the need for a crazy new character, a breathtaking landscape or a bone-breaking animation arises, Maurice is there to realize any wild fantasy with sweat, blood and some ink.",
+            "description2": "Allegedly Maurice \"forgot\" to cancel his World of Warcraft subscription, which is why we're genuinly delighted that he <i>- for inexplicable reasons -</i> decides to provide us with his indespensible art every day once more."
+        },
+        "jonas": {
+            "role": "Game Engine Developer",
+            "description1": "Jonas is the lunatic who develops our universities own <a class=\"link\" href=\"https://hs-furtwangen.github.io/FUDGE/\" target=\"_blank\">FUDGE</a> game engine. Sometimes it feels like we're in the stone age when Jonas reveals a new feature and we all have a look on our face akin to discovering fire for the first time.",
+            "description2": "If we somehow do end up in the actual stone age, beware! Jonas is not just a skilled programmer, he also boulders regularly which makes him a rare but dangerous combination of brains and brawn."
+        },
+        "jirka": {
+            "role": "Project Leader",
+            "description1": "Jirka sees everything. In some ways he's the creator of this project, our leader, and the original creator of the <a class=\"link\" href=\"https://hs-furtwangen.github.io/FUDGE/\" target=\"_blank\">FUDGE</a> game engine. He's the one that landed the project for us – and he's the one that ensures that we'll finish it.",
+            "description2": "If he doesn't create new FUDGE dimensions you can find him in his game lab where he brings his sometimes crazy and innovative ideas to life. But beware, his love for game development is highly contagious!"
+        },
+        "lukas": {
+            "role": "Game Developer",
+            "description1": "Lukas is the hacker of this team. If a feature is missing, it's just because Lukas didn't get to it yet. If a feature is in the game, it's just because Lukas-. The only thing that can stop him is time - which can be really scary if you consider how unstoppable he would be if a day had more than 24 hours.",
+            "description2": "Whenever Lukas isn't busy adding multiplayer to our games on a whim, he develops mods, resource packs and maps for Minecraft. He's got so many projects going, it's only a matter of time before he makes his millions and leaves us behind, which is why we celebrate every additional week with Lukas as a victory."
+        },
+        "project": {
+            "title": "The project",
+            "tagline": "Motivationline, assemble!",
+            "description1": "We are Motivationline, a small team of the <a class=\"link\" href=\"https://www.hs-furtwangen.de\" target=\"_blank\">Hochschule Furtwangen University</a> with the goal to create a browser based motivational serious game as part of a larger project called \"Boostline\".",
+            "description2": "Who or what is it supposed to motivate, I hear you ask? The game is aimed at students who are in their last years of highschool, motivating them to look into career options and providing some basic information on that topic.",
+            "description3": "Does this sound interesting to you? Then why not join our discord server, where you can be one of the first to test our prototypes and provide feedback."
+        }
+    }
+}

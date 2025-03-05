@@ -1,0 +1,77 @@
+{
+    "header": {
+        "home": "Startseite",
+        "about": "Über Uns"
+    },
+    "game": {
+        "generic": {
+            "video_error": "Dein Browser unterstützt dieses Video-Format nicht",
+            "genre": "Genre",
+            "goal": "Spielziel",
+            "duration": "Spieldauer",
+            "play": "spielen"
+        },
+        "amphibar": {
+            "title": "Amphibar",
+            "genre": "Point n' Click",
+            "goal": "Kannst du den grummeligen Frosch-Barkeeper davon zu überzeugen, die Bar aufzuschließen, um sie verlassen zu können?",
+            "duration": "10-15 Minuten"
+        },
+        "rob-nic": {
+            "title": "Rob & Nic",
+            "genre": "Survivors-Like",
+            "goal": "Das Ziel einer jeden Spielsitzung ist es die letzte Stufe zu erreichen und den finalen Boss zu töten. Das übergreifende Ziel aller Sitzungen zusammen ist es alle Karten zu sammeln und die eigenen Lieblingskarten auf das maximale Level zu upgraden.",
+            "duration": "5-30 Minuten je nach Lust und Laune"
+        },
+        "brawlyard": {
+            "title": "Brawlyard",
+            "genre": "Multiplayer-Brawl-Like",
+            "goal": "Beweise dich im 1v1 oder 2v2 und zeig den anderen was Skill bedeutet. (Spiel nur in 🇬🇧)",
+            "duration": "5-30 Minuten oder bis dein Gegenüber aufgibt"
+        },
+        "eumlinge": {
+            "title": "Die Eumlinge",
+            "genre": "Cozy-Sandbox",
+            "goal": "Wilkommen bei den Eumlingen! Lehn dich zurück und finde die passenden Eumlinge für die richtigen Stationen. Was kann schon schief gehen?",
+            "duration": "10-15 Minuten je nach Lust und Laune"
+        }
+    },
+    "about": {
+        "team": "Das Team",
+        "title": {
+            "professor": "Prof."
+        },
+        "julien": {
+            "role": "Game Designer",
+            "description1": "Julien ist der Game Designer der Bande. Mit seinem Signature-Move <i>\"Ist super, aber...\"</i> liebt er es, sein Team auf Trab zu halten und balanciert jeden Tag auf Messers Schneide zwischen Perfektion und einem blauen Auge. Bisher ist weder noch eingetreten.",
+            "description2": "Er nimmt seinen Job sogar so ernst, dass er selbst in seiner Freizeit Videospiele spielt, denn selbstverständlich muss man Spiele spielen, um sie entwickeln zu können. Er selbst bezeichnet sich auch als ungeschlagenen Super Smash Bros. Ultimate-Spieler, wobei er nicht ganz begreift, dass man auch gegen andere spielen muss, um als ungeschlagen zu gelten."
+        },
+        "maurice": {
+            "role": "Game Artist",
+            "description1": "Maurice ist derjenige, ohne den keines unserer Spiele überhaupt anschaubar wäre. Wann immer ein verrückter neuer Charakter, eine atemberaubende Landschaft oder eine knochenbrechende Animation benötigt wird, ist Maurice allzeit bereit, um mit Schweiß, Blut und etwas Tinte jede Fantasie wahr werden zu lassen.",
+            "description2": "Angeblich hat Maurice \"vergessen\", seine World of Warcraft Subscription zu kündigen, weswegen wir zurzeit überhaupt froh sind, dass er sich <i>- aus uns unerklärlichen Gründen -</i> jeden Tag aufs Neue dazu entscheidet, uns mit seiner unverzichtbaren Kunst zu beliefern."
+        },
+        "jonas": {
+            "role": "Game Engine Developer",
+            "description1": "Jonas ist der Verrückte, der unsere hochschuleigene Game Engine namens <a class=\"link\" href=\"https://hs-furtwangen.github.io/FUDGE/\" target=\"_blank\">FUDGE</a> entwickelt. Manchmal fühlt es sich an, als wären wir in der Steinzeit, wenn Jonas wieder mit einem neuen Feature um die Ecke kommt und wir alle gucken, als hätte er gerade das Feuer erfunden.",
+            "description2": "Falls wir aber irgendwann mal in die Steinzeit zurückkatapultiert werden sollten, dann Achtung! Jonas kann nämlich nicht nur programmieren, sondern geht auch regelmäßig bouldern, was ihn zu einer höchst gefährlichen und seltenen Kombination aus Gehirn und Muskelmasse macht."
+        },
+        "jirka": {
+            "role": "Project Leader",
+            "description1": "Jirka sieht alles. Er ist auf irgendeine Weise der Schöpfer des Projektes, unser Oberhaupt und der Schöpfer der <a class=\"link\" href=\"https://hs-furtwangen.github.io/FUDGE/\" target=\"_blank\">FUDGE</a> Engine. Er ist derjenige, der dieses Projekt an Land gezogen hat – und dafür sorgt, dass wir es auch bis zum Ende durchziehen.",
+            "description2": "Wenn er nicht gerade neue Dimensionen in FUDGE erschafft, findet man ihn meistens im Spiellabor, wo man ihn live dabei erleben kann, wie er seine verrückten Ideen in die Tat umsetzt. Aber aufgepasst, seine Liebe für Spieleentwicklung ist höchst ansteckend!"
+        },
+        "lukas": {
+            "role": "Game Developer",
+            "description1": "Lukas ist der Hacker im Team. Wenn ein Feature im Game fehlt, dann nur, weil Lukas noch nicht dazu kam, und wenn ein Feature im Game ist, dann nur weil Lukas-. Das Einzige, was ihn aufhalten kann, ist die Zeit - was echt beängstigend sein kann, wenn man darüber nachdenkt, wie unaufhaltbar er wäre, wenn Tage mehr als 24 Stunden hätten.",
+            "description2": "Wann immer Lukas nicht damit beschäftigt ist, mal eben schnell Multiplayer zu unseren Games hinzuzufügen, entwickelt und programmiert er gerne Mods, Resource Packs und Maps für Minecraft. Er hat so viele Projekte am Laufen, dass es nur eine Frage der Zeit ist, bis er seine Millionen verdient und uns verlässt, weswegen wir jede weitere Woche mit Lukas als Erfolg feiern."
+        },
+        "project": {
+            "title": "Das Projekt",
+            "tagline": "Motivationline, assemble!",
+            "description1": "Wir sind die Motivationline, ein kleines Team der <a class=\"link\" href=\"https://www.hs-furtwangen.de\" target=\"_blank\">Hochschule Furtwangen</a>, mit dem Ziel im Rahmen des Projekts \"Boostline\" des Landes Baden-Württemberg ein browserbasiertes Serious Game zu entwickeln, das motiviert.",
+            "description2": "Wen oder was soll es motivieren, höre ich euch fragen? Das Spiel zielt darauf ab, Schülerinnen und Schüler der Sekundarstufe I und II für Fragen der Berufs- und Studienorientierung zu interessieren und erste Informationen zu vermitteln.",
+            "description3": "Klingt das interessant? Na dann joint doch unserem Discord-Server, wo ihr als Erste unsere neuen Prototypen testen und uns Feedback geben könnt."
+        }
+    }
+}

@@ -104,4 +104,4 @@ function setupHeaderCheck(){
     });
     observer.observe(document.getElementById("header-scroll-marker"));
 }
-setupHeaderCheck();
+// setupHeaderCheck();

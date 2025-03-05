@@ -14,6 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="script/frontpage.js" defer></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script type="module" src="script/lang.mjs"></script>
 
     <meta property="og:title" content="Motivationline" />
     <meta property="og:type" content="website" />
@@ -29,15 +31,15 @@
             <img id="motivationline" src="img/motivationline.png">
         </a>
         <nav>
-            <a href="/" class="active">Home</a>
-            <a href="/about/">About Us</a>
+            <a href="/" class="active" data-t="header.home">Startseite</a>
+            <a href="/about/" data-t="header.about">Über uns</a>
         </nav>
     </header>
     <div id="header-scroll-marker"></div>
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div id="amphibar" class="game-name">AMPHIBAR</div>
+                <div id="amphibar" class="game-name" data-t="game.amphibar.title">AMPHIBAR</div>
                 <video class="hover-video" muted>
                     <source src="videos/amphibar.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
@@ -46,16 +48,18 @@
         </div>
         <div class="hover-text" style="height: 0;">
             <a id="amphibar-play" class="game-play" href="Amphibar" target="_blank"
-                rel="noopener noreferrer"><span>PLAY</span></a>
-            <h2>Genre</h2>
-            Point n' Click
-            <h2>Spielziel</h2>
-            <div>
+                rel="noopener noreferrer"><span data-t="game.generic.play">SPIELEN</span></a>
+            <h2 data-t="game.generic.genre">Genre</h2>
+            <div data-t="game.amphibar.genre">
+                Point n' Click
+            </div>
+            <h2 data-t="game.generic.goal">Spielziel</h2>
+            <div data-t="game.amphibar.goal">
                 Kannst du den grummeligen Frosch-Barkeeper davon zu überzeugen,
                 die Bar aufzuschließen, um sie verlassen zu können?
             </div>
-            <h2>Spieldauer</h2>
-            <div>
+            <h2 data-t="game.generic.duration">Spieldauer</h2>
+            <div data-t="game.amphibar.duration">
                 10-15 Minuten
             </div>
         </div>
@@ -65,7 +69,7 @@
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div id="robnnic" class="game-name">ROB & NIC</div>
+                <div id="robnnic" class="game-name" data-t="game.rob-nic.title">ROB & NIC</div>
                 <video class="hover-video" muted>
                     <source src="videos/robnnic.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
@@ -74,17 +78,19 @@
         </div>
         <div class="hover-text" style="height: 0;">
             <a id="robnnic-play" class="game-play" href="CardSurvivor" target="_blank"
-                rel="noopener noreferrer"><span>PLAY</span></a>
-            <h2>Genre</h2>
-            Survivors-Like
-            <h2>Spielziel</h2>
-            <div>
+                rel="noopener noreferrer"><span data-t="game.generic.play">SPIELEN</span></a>
+            <h2 data-t="game.generic.genre">Genre</h2>
+            <div data-t="game.rob-nic.genre">
+                Survivors-Like
+            </div>
+            <h2 data-t="game.generic.goal">Spielziel</h2>
+            <div data-t="game.rob-nic.goal">
                 Das Ziel einer jeden Spielsitzung ist es die letzte Stufe zu erreichen und den finalen Boss zu töten.
                 Das übergreifende Ziel aller Sitzungen zusammen ist es alle Karten zu sammeln und die eigenen
                 Lieblingskarten auf das maximale Level zu upgraden.
             </div>
-            <h2>Spieldauer</h2>
-            <div>
+            <h2 data-t="game.generic.duration">Spieldauer</h2>
+            <div data-t="game.rob-nic.duration">
                 5-30 Minuten je nach Lust und Laune
             </div>
         </div>
@@ -93,7 +99,7 @@
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div id="brawlyard" class="game-name">BRAWLYARD</div>
+                <div id="brawlyard" class="game-name" data-t="game.brawlyard.title">BRAWLYARD</div>
                 <video class="hover-video" muted>
                     <source src="videos/brawlyard.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
@@ -102,15 +108,17 @@
         </div>
         <div class="hover-text" style="height: 0;">
             <a id="brawlyard-play" class="game-play" href="BrawlLike" target="_blank"
-                rel="noopener noreferrer"><span>PLAY</span></a>
-            <h2>Genre</h2>
-            Multiplayer-Brawl-Like
-            <h2>Spielziel</h2>
-            <div>
+                rel="noopener noreferrer"><span data-t="game.generic.play">SPIELEN</span></a>
+            <h2 data-t="game.generic.genre">Genre</h2>
+            <div data-t="game.brawlyard.genre">
+                Multiplayer-Brawl-Like
+            </div>
+            <h2 data-t="game.generic.goal">Spielziel</h2>
+            <div data-t="game.brawlyard.goal">
                 Beweise dich im 1v1 oder 2v2 und zeig den anderen was Skill bedeutet.
             </div>
-            <h2>Spieldauer</h2>
-            <div>
+            <h2 data-t="game.generic.duration">Spieldauer</h2>
+            <div data-t="game.brawlyard.duration">
                 5-30 Minuten oder bis dein Gegenüber aufgibt.
             </div>
         </div>
@@ -119,7 +127,7 @@
     <div class="banner">
         <div class="game-link">
             <div class="video-container">
-                <div id="eumlinge" class="game-name">DIE EUMLINGE</div>
+                <div id="eumlinge" class="game-name" data-t="game.eumlinge.title">DIE EUMLINGE</div>
                 <video class="hover-video" muted>
                     <source src="videos/eumling.mp4" type="video/mp4">
                     Dein Browser unterstützt dieses Video-Format nicht.
@@ -128,15 +136,17 @@
         </div>
         <div class="hover-text" style="height: 0;">
             <a id="eumling-play" class="game-play" href="Eumlingen" target="_blank"
-                rel="noopener noreferrer"><span>PLAY</span></a>
-            <h2>Genre</h2>
-            Cozy-Sandbox
-            <h2>Spielziel</h2>
-            <div>
+                rel="noopener noreferrer"><span data-t="game.generic.play">SPIELEN</span></a>
+            <h2 data-t="game.generic.genre">Genre</h2>
+            <div data-t="game.eumlinge.genre">
+                Cozy-Sandbox
+            </div>
+            <h2 data-t="game.generic.goal">Spielziel</h2>
+            <div data-t="game.eumlinge.goal">
                 Wilkommen bei den Eumlingen! Lehn dich zurück und finde die passenden Eumlinge für die richtigen Stationen. Was kann schon schief gehen? 
             </div>
-            <h2>Spieldauer</h2>
-            <div>
+            <h2 data-t="game.generic.duration">Spieldauer</h2>
+            <div data-t="game.eumlinge.duration">
                 10-15 je nach Lust und Laune
             </div>
         </div>
@@ -146,13 +156,18 @@
     <!--<div class="banner" disabled>
         <div class="game-link">
             <div class="video-container">
-                <div id="comingsoon" class="game-name">NÄCHSTES PROJEKT</div>
+                <div id="comingsoon" class="game-name" data-t="game..title">NÄCHSTES PROJEKT</div>
                 <img class="hover-video" src="videos/coming_soon.png">
             </div>
         </div>
     </div>-->
 
     <div class="spacer"></div>
+    
+    <div class="lang-switcher">
+        <span class="lang-switch-button" data-lang="de">🇩🇪</span>
+        <span class="lang-switch-button" data-lang="en">🇬🇧</span>
+    </div>
 
 </body>
 
