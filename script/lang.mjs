@@ -1,3 +1,5 @@
+import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+
 const languages = {
     de: { nativeName: "Deutsch" },
     en: { nativeName: "English" },
@@ -58,6 +60,7 @@ function applyLanguageToDOM() {
         for(let element of elementsWithLangData){
             element.innerHTML = i18next.t(element.dataset.t);
         }
+        polyfillCountryFlagEmojis();
         return;
     }
 
