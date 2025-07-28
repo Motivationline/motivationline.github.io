@@ -34,7 +34,14 @@
             "genre": "Cozy-Sandbox",
             "goal": "Wilkommen bei den Eumlingen! Lehn dich zurück und finde die passenden Eumlinge für die richtigen Stationen. Was kann schon schief gehen?",
             "duration": "10-15 Minuten je nach Lust und Laune"
+        },
+          "autochallenger": {
+            "title": "Die Eumlinge²",
+            "genre": "Rogue-Lite AutoBattler",
+            "goal": "Wilkommen bei den Eumlingen! Lehn dich zurück und finde die passenden Eumlinge für die richtigen Stationen. Was kann schon schief gehen?",
+            "duration": "10-15 Minuten je nach Lust und Laune"
         }
+
     },
     "about": {
         "team": "Das Team",
