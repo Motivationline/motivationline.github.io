@@ -107,6 +107,10 @@ video:hover {
 
 }
 
+#autochallenger{
+    color: #549ce0
+}
+
 #comingsoon {
     color: rgb(187, 86, 86);
 }
@@ -123,6 +127,10 @@ video:hover {
 }
 #eumling-play {
     background-color: #e2a249;
+}
+
+#autochallenger-play {
+    background-color: #2d52b8;
 }
 
 .hover-text {
