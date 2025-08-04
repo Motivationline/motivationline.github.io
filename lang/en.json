@@ -34,6 +34,12 @@
             "genre": "Cozy-Sandbox",
             "goal": "Welcome to the eumlings. Lean back, relax and find the most fitting eumling for the workstations. What could go wrong? (🇩🇪 only)",
             "duration": "10-15 minutes depending on what you feel like"
+        },
+        "autochallenger": {
+            "title": "The Eumlings²",
+            "genre": "Rogue-Lite AutoBattler",
+            "goal": "Master challenges and develop your eumlings into fully fledged personalities!",
+            "duration": "~5 minutes per run"
         }
     },
     "about": {
