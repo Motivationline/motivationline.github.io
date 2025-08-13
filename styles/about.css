@@ -38,7 +38,7 @@ h2 {
 
 #team-image {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     position: relative;
     height: auto;
@@ -154,10 +154,16 @@ img.member.default.highlight {
     margin-top: 13%; */
 }
 
-#member-maurice {
-    margin-right: 50%;
-    margin-left: -50%;
+#member-anni {
+    margin-right: 70%;
+    margin-left: -70%;
+    top:-1vh;
+}
 
+#member-maurice {
+    margin-right: 100%;
+    margin-left: -100%;
+    top:-3vh;
 }
 
 .name span {

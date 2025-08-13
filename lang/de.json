@@ -73,6 +73,11 @@
             "description1": "Lukas ist der Hacker im Team. Wenn ein Feature im Game fehlt, dann nur, weil Lukas noch nicht dazu kam, und wenn ein Feature im Game ist, dann nur weil Lukas-. Das Einzige, was ihn aufhalten kann, ist die Zeit - was echt beängstigend sein kann, wenn man darüber nachdenkt, wie unaufhaltbar er wäre, wenn Tage mehr als 24 Stunden hätten.",
             "description2": "Wann immer Lukas nicht damit beschäftigt ist, mal eben schnell Multiplayer zu unseren Games hinzuzufügen, entwickelt und programmiert er gerne Mods, Resource Packs und Maps für Minecraft. Er hat so viele Projekte am Laufen, dass es nur eine Frage der Zeit ist, bis er seine Millionen verdient und uns verlässt, weswegen wir jede weitere Woche mit Lukas als Erfolg feiern."
         },
+         "anni": {
+            "role": "UX/UI Designer",
+            "description1": "Anni ist unsere UX & UI-Zauberin. Wenn irgendwo ein Button schief sitzt, ein Menü nicht intuitiv ist oder eine Farbe zu sehr ins Auge sticht, merkt sie es schneller, als wir „Ich glaube, da ist ein Button schief“ sagen können. Mit einem unfehlbaren Sinn für Design und einer gesunden Portion Perfektionismus sorgt sie dafür,dass unsere Spiele... 'klicken'.",
+            "description2": " Auch wenn man meinen könnte, dass sie sich nach und nach in eine Pflanze transformiert, ist genau das Gegenteil der Fall. Anni ist alles andere als grün hinter den Ohren, sie ist stets aktiv, engagiert und motiviert. Das Gefährliche dabei ist, dass sie bei Charisma-Würfen immer mit Vorteil wirft."
+        },
         "project": {
             "title": "Das Projekt",
             "tagline": "Motivationline, assemble!",
